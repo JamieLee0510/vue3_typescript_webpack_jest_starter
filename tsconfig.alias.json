@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "types": [
+          "webpack-env",
+          "jest"
+        ],
+    
+        "lib": [
+          "esnext",
+          "dom",
+          "dom.iterable",
+          "scripthost"
+        ],
+        "paths": {
+            "@base/*": ["src/*"],
+            "@layouts/*": ["src/app/components/layouts/*"],
+            "@themes/*": ["src/app/themes/*"],
+            "@components/*": ["src/app/components/*"],
+            "@store/*": ["src/app/store/*"],
+            "@lang/*": ["src/app/i18n/lang/*"],
+            "@atlantis/*": ["src/app/themes/atlantis/*"],
+            "@hooks/*": ["src/app/hooks/*"],
+            "@models/*": ["src/models/*"],
+            "@utils/*": ["src/utils/*"],
+            "@features/*": ["src/features/*"]
+        }
+    }
+}
+
